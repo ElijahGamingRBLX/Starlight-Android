@@ -1,3 +1,12 @@
+--[[ Notification ]] --
+print("Elijah Executor Succesfully Loaded")
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Elijah Executor | Android";
+ Text = "Executor Has Loaded Enjoy Using!";
+ Icon = "";
+ Duration = 5;
+})
+--[[ Official UI ]] --
 -- Create a ScreenGui to hold our GUI elements
 local gui = Instance.new("ScreenGui")
 gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
