@@ -1,3 +1,6 @@
+--[[ Kick Message ]] --
+game:GetService("Players").LocalPlayer:Kick("Starlight Android Is Still In Development Please Wait For The Release");
+
 -- Create a ScreenGui to hold our GUI elements
 local gui = Instance.new("ScreenGui")
 gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -131,3 +134,11 @@ executeButton.MouseButton1Click:Connect(executeScriptAndUpdateStatus)
 
 -- Connect the clear button click to the function
 clearButton.MouseButton1Click:Connect(clearScriptAndUpdateStatus)
+
+--[[ Notification ]] --
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Starlight Android | Executor";
+ Text = "Starlight Executor Has Loaded Enjoy Using!";
+ Icon = "";
+ Duration = 5;
+})
